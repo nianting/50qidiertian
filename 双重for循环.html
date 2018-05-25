@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // var str = '';
+    // for(var i = 1; i<= 3;i++){
+    //     for(var j=1;j<=9;j++){
+    //         str = str + '★';
+    //     }
+    //     str = str + '\n';
+    // }
+    // console.log(str);
+    
+
+    // 倒三角的两种做法(1)
+    var str = '';
+    for(var i = 1; i<= 9;i++){
+        for(var j=1;j<=10-i;j++){
+            str = str + '★';
+        }
+        str = str + '\n';
+    }
+    console.log(str);
+
+        // 倒三角的两种做法(2)
+    //     var str = '';
+    // for(var i = 1; i<= 9;i++){
+    //     for(var j=i;j<=9;j++){
+    //         str = str + '★';
+    //     }
+    //     str = str + '\n';
+    // }
+    // console.log(str);
+
+        //1.打印正方形(   document.write()   )
+
+    //像这样的正方形，来3个；
+//    for(var k=1;k<=3;k++){
+//        //像这样一行一行的五角星给我来9行
+//        for(var j=1;j<=9;j++){//外循环控制行数
+//            //用for打印9个☆
+//            for(var i=1;i<=9;i++){//内循环控制列数
+//                document.write("☆");
+//            }
+//            //打印九个以后直接换行
+//            document.write("<br>");
+//        }
+//        //打印一个正方形后换行
+//        document.write("<br>");
+//    }
+
+    //2.打印直角三角形
+
+    //正方形;
+//    for(var i=1;i<=9;i++){
+//        //转换三角形：每行个数不同;  第一行一个；第二行两个，第三行三个....
+//            //j就代表着行数，每一行由i决定打印多少，j直接决定打印的个数;
+//        for(var j=1;j<=i;j++){
+//            document.write("☆");
+//        }
+//        document.write("<br>");
+//    }
+
+//    var str = '';
+//    for(var i = 1;i<=9;i++){
+//        for(var j = 1;j<=i;j++){
+//            // 1x2=2
+//            str = str +  j + '×' + i + '=' + j*i +'\t';
+//        }
+    //    str += '\n';
+//    }
+//    console.log(str);
+
+      //打印九九乘法表
+    //    for(var i = 1;i<=9;i++){
+    //     for(var j=1;j<=i;j++){
+    //         //把☆改成久久乘法表的内容；
+    //                     //前两个值由i和j决定；后面的值是算出来的;
+    //         document.write(j+"*"+i+"="+i*j+"&nbsp;");
+    //     }
+    //     document.write("<br>");
+    // }
+   
+   
+
+    
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+    // 能整除4且不能整除100的为闰年。(如2004年就是闰年，1901年不是闰年)
+    // 能够被400 整除的就是闰年 % == 0；
+    // 接收年份
+    var year = prompt('请输入年份:');
+    if(year % 4 === 0 && year %100 !== 0 || year % 400 === 0 ){
+        alert(year + '是闰年');
+    }else{
+        alert(year + '是平年');
+    }
+    // 判断年份
+    
+    
+    
+    </script>
+    
+</body>
+</html>
